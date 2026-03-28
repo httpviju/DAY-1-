@@ -1,84 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Earn Money</title>
+    <title>All in One</title>
+
+    <!-- CSS yaha -->
     <style>
         body {
-            margin: 0;
-            font-family: Arial;
-            background: #0f172a;
+            background: #111;
             color: white;
             text-align: center;
-        }
-
-        header {
-            background: #020617;
-            padding: 15px;
-            font-size: 22px;
-        }
-
-        .container {
-            margin-top: 50px;
-        }
-
-        .coins {
-            font-size: 40px;
-            margin: 20px;
-            color: #22c55e;
+            font-family: Arial;
         }
 
         button {
-            padding: 15px 30px;
-            font-size: 18px;
+            padding: 10px 20px;
+            background: lime;
             border: none;
-            border-radius: 10px;
-            background: #22c55e;
-            color: black;
+            border-radius: 8px;
             cursor: pointer;
         }
-
-        button:hover {
-            background: #16a34a;
-        }
-
-        .card {
-            margin: 20px auto;
-            padding: 20px;
-            width: 250px;
-            background: #1e293b;
-            border-radius: 15px;
-        }
     </style>
+
 </head>
 
 <body>
 
-<header>💰 Earn Money App</header>
+<h1>🔥 Single File Website</h1>
+<button onclick="hello()">Click Me</button>
 
-<div class="container">
-
-    <div class="card">
-        <h2>Your Balance</h2>
-        <div class="coins" id="coins">0</div>
-    </div>
-
-    <button onclick="watchAd()">🎥 Watch Ad & Earn</button>
-
-</div>
-
+<!-- JavaScript yaha -->
 <script>
-    let coins = 0;
-
-    function watchAd() {
-        alert("📺 Ad is playing... (demo)");
-
-        // fake delay
-        setTimeout(() => {
-            coins += 10;
-            document.getElementById("coins").innerText = coins;
-            alert("✅ You earned 10 coins!");
-        }, 2000);
-    }
+function hello() {
+    alert("Bhai sab ek file me chal raha hai 😎");
+}
 </script>
 
 </body>
