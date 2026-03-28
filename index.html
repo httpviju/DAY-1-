@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Website</title>
+    <title>My Pro Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: #222;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .box {
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #00ffcc;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        button:hover {
+            background: #00ccaa;
+        }
+    </style>
 </head>
 <body>
-    <h1>🔥 Welcome to Test Website</h1>
-    <p>Yeh meri pehli free website hai 😎</p>
+
+<header>🔥 Viju's Website</header>
+
+<div class="box">
+    <h1>Welcome bhai 😎</h1>
+    <p>Ab ye website pro lag rahi hai!</p>
+    <button onclick="showMessage()">Click me</button>
+</div>
+
+<script>
+    function showMessage() {
+        alert("🔥 Tu developer ban raha hai bhai!");
+    }
+</script>
+
 </body>
 </html>
