@@ -1,50 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Pro Website</title>
+    <title>Earn Money</title>
     <style>
         body {
             margin: 0;
             font-family: Arial;
-            background: #111;
+            background: #0f172a;
             color: white;
             text-align: center;
         }
+
         header {
-            background: #222;
-            padding: 20px;
-            font-size: 24px;
+            background: #020617;
+            padding: 15px;
+            font-size: 22px;
         }
-        .box {
+
+        .container {
             margin-top: 50px;
         }
-        button {
-            padding: 10px 20px;
-            border: none;
-            background: #00ffcc;
-            color: black;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 8px;
+
+        .coins {
+            font-size: 40px;
+            margin: 20px;
+            color: #22c55e;
         }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background: #22c55e;
+            color: black;
+            cursor: pointer;
+        }
+
         button:hover {
-            background: #00ccaa;
+            background: #16a34a;
+        }
+
+        .card {
+            margin: 20px auto;
+            padding: 20px;
+            width: 250px;
+            background: #1e293b;
+            border-radius: 15px;
         }
     </style>
 </head>
+
 <body>
 
-<header>🔥 Viju's Website</header>
+<header>💰 Earn Money App</header>
 
-<div class="box">
-    <h1>Welcome bhai 😎</h1>
-    <p>Ab ye website pro lag rahi hai!</p>
-    <button onclick="showMessage()">Click me</button>
+<div class="container">
+
+    <div class="card">
+        <h2>Your Balance</h2>
+        <div class="coins" id="coins">0</div>
+    </div>
+
+    <button onclick="watchAd()">🎥 Watch Ad & Earn</button>
+
 </div>
 
 <script>
-    function showMessage() {
-        alert("🔥 Tu developer ban raha hai bhai!");
+    let coins = 0;
+
+    function watchAd() {
+        alert("📺 Ad is playing... (demo)");
+
+        // fake delay
+        setTimeout(() => {
+            coins += 10;
+            document.getElementById("coins").innerText = coins;
+            alert("✅ You earned 10 coins!");
+        }, 2000);
     }
 </script>
 
